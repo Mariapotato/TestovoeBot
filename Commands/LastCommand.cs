@@ -30,7 +30,6 @@ namespace CRMParkBot.Commands
             }
 
             var chatId = update.Message.Chat.Id;
-            await _botClient.SendTextMessageAsync(chatId, "При данной архитектуре бота эта команда реализовывается слишком громоздко, наиболее оптимальный вариант для работы в асинхронном режиме была бы бд с сохранением ChatID и последней команды.Но для данного тестового задания развертывание отдельной БД как я понимаю запрещено", replyMarkup: new ForceReplyMarkup { Selective = true }); ;
 
             return true;
         }
